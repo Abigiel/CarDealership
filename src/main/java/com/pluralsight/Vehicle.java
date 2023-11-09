@@ -10,7 +10,9 @@ public class Vehicle {
     private int odometer;
     private String type;
 
-    public Vehicle (int vin, double price, String model, String make, int year, String color, int odometer, String type){
+    public Vehicle (int vin,String model,String make,String type,int year,String color,int odometer,double price){
+        this.vin = vin;
+        this.make = make;
         this.color= color;
         this.odometer= odometer;
         this. model= model;
@@ -82,5 +84,11 @@ public class Vehicle {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "VIN: " + vin + " | Model: " + model + " | Make: " + make + " | Type: " + type +
+                " | Year: " + year + " | Color: " + color + " | Odometer: " + odometer + " | Price: " + price;
     }
 }
