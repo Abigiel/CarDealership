@@ -6,13 +6,12 @@ import java.io.*;
 public class DealershipFileManager {
 
 
-    //Dealership dealership= new Dealership("SA Motors","Charlotte, NC", "1-800-5555");
+    static Dealership dealership= new Dealership("SA Motors","Charlotte, NC", "1-800-5555");
 
     public static void writeFile() throws IOException {
         FileWriter fileWriter = new FileWriter("src/main/resources/Inventory.csv", true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        //return bufferedWriter;
 
         bufferedWriter.close();
     }

@@ -8,10 +8,10 @@ import static com.pluralsight.DealershipFileManager.writeFile;
 public class CarDealership {
     public static void main(String[] args) throws IOException {
 
-        // writeFile();
+       // UserInterface.processGetAllVehiclesRequest();
 
-        UserInterface.processGetByColorRequest();
-        //System.out.println(Dealership.getVehicleByColor("blue"));
+        UserInterface.processGetByYearRequest();
+
 
 
     }
